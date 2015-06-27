@@ -1,5 +1,5 @@
 ---
-excerpt_separator: <!--more-->
+layout: default
 ---
 
 This is short description

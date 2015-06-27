@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 This is short description

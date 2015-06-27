@@ -1,0 +1,19 @@
+{
+  "name": "oskar-szura-blog",
+  "version": "0.0.1",
+  "description": "Oskar Szura Blog",
+  "dependencies": {
+    "sass-bootstrap": "3.0.2"
+  },
+  "devDependencies": {
+  },
+  "keywords": [
+    "motion",
+    "physics",
+    "particles"
+  ],
+  "authors": [
+    "Oskar Szura <oskar.szura@gmail.com>"
+  ],
+  "license": "MIT"
+}

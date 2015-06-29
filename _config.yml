@@ -1,1 +1,8 @@
 excerpt_separator: <!--more-->
+categories:
+  - title: JavaScript
+    url: /javascript
+  - title: FrontEnd
+    url: /frontend
+  - title: NodeJS
+    url: /nodejs

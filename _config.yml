@@ -1,5 +1,1 @@
 excerpt_separator: <!--more-->
-analytics :
-  provider : google
-  google :
-      tracking_id : 'UA-64563894-1'

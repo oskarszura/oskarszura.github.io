@@ -25,7 +25,14 @@
 <div class="container-fluid">
     <div class="row">
         <aside class="col-sm-3">
-
+            <h4>Categories</h4>
+            <ol>
+                {% for category in site.categories %}
+                <li>
+                    <a href="{{ category.url }}">{{ category.title }}</a>
+                </li>
+                {% endfor %}
+            </ol>
         </aside>
         <main class="col-sm-9">
             {{ content }}

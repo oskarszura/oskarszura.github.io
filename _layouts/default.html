@@ -29,7 +29,7 @@
             <ol>
                 {% for category in site.categories %}
                 <li>
-                    <a href="{{ category.url }}">{{ category.title }}</a>
+                    <a href="">{{ category | first }}</a>
                 </li>
                 {% endfor %}
             </ol>

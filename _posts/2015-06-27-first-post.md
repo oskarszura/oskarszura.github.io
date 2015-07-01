@@ -1,5 +1,6 @@
 ---
 layout: post
+category: others
 ---
 
 This is short description

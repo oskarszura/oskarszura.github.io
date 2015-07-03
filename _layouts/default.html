@@ -20,7 +20,7 @@
             <ul class="nav navbar-nav">
                 {% for category in site.categories %}
                 <li>
-                    <a href="{{ category | second }}">{{ category | first }}</a>
+                    <a href="{{ category | slugify }}">{{ category | first }}</a>
                 </li>
                 {% endfor %}
             </ul>

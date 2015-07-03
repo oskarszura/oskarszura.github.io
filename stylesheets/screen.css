@@ -7614,13 +7614,18 @@ td.visible-print {
     display: none !important;
   }
 }
-/* line 12, ../sass/screen.scss */
+/* line 1, ../sass/partials/_navbar.scss */
+nav.navbar {
+  margin-bottom: 0px;
+}
+
+/* line 14, ../sass/screen.scss */
 header {
   background-color: #17baef;
   height: 300px;
   margin-bottom: 10px;
 }
-/* line 17, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 header h1 {
   margin-top: 102px;
   text-align: center;

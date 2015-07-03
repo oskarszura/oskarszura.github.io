@@ -20,7 +20,7 @@
             <ul class="nav navbar-nav">
                 {% for category in site.categories %}
                 <li>
-                    <a href="">{{ category | first }}</a>
+                    <a href="{{ category.url }}">{{ category | first }}</a>
                 </li>
                 {% endfor %}
             </ul>
@@ -36,13 +36,13 @@
     </div>
 </header>
 
-<div class="container-fluid">
+<main class="container">
     <div class="row">
-        <main class="col-sm-12">
+        <div class="col-sm-12">
             {{ content }}
-        </main>
+        </div>
     </div>
-</div>
+</main>
 
 <footer class="container-fluid">
     <div class="row">

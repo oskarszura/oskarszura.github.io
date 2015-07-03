@@ -18,21 +18,11 @@
     <div class="container">
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active">
-                    <a href="#">
-                        Home
-                    </a>
-                </li>
+                {% for category in site.categories %}
                 <li>
-                    <a href="#">
-                        Articles
-                    </a>
+                    <a href="">{{ category | first }}</a>
                 </li>
-                <li>
-                    <a href="#">
-                        Books
-                    </a>
-                </li>
+                {% endfor %}
             </ul>
         </div>
     </div>
@@ -48,17 +38,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <aside class="col-sm-3">
-            <h4>Categories</h4>
-            <ol>
-                {% for category in site.categories %}
-                <li>
-                    <a href="">{{ category | first }}</a>
-                </li>
-                {% endfor %}
-            </ol>
-        </aside>
-        <main class="col-sm-9">
+        <main class="col-sm-12">
             {{ content }}
         </main>
     </div>

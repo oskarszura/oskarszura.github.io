@@ -18,11 +18,21 @@
     <div class="container">
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                {% for category in site.categories %}
                 <li>
-                    <a href="{{ category | slugify }}">{{ category | first }}</a>
+                    <a href="/posts">
+                        Posts
+                    </a>
                 </li>
-                {% endfor %}
+                <li>
+                    <a href="/">
+                        Books
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        About Me
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

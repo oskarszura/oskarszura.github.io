@@ -8,7 +8,7 @@ title: Oskar Szura Blog
     {% for post in site.posts %}
     <li class="post-list__item">
         <a href="{{ post.url }}">
-            <span class="post-list__date">({{ post.date }})</span>
+            <span class="post-list__date">({{ post.date | date: "%F" }})</span>
             <span class="post-list__title">{{ post.title }}</span>
         </a>
     </li>

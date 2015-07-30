@@ -11,3 +11,11 @@
 
 @import "./partials/navbar";
 @import "./partials/header";
+
+body {
+  font-family: 'Open Sans';
+}
+
+a {
+  color: $color-curious-blue;
+}

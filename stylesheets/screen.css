@@ -7621,7 +7621,7 @@ nav.navbar {
 
 /* line 1, ../sass/partials/_header.scss */
 header {
-  background-color: #17baef;
+  background-color: #2d91d2;
   height: 300px;
   margin-bottom: 10px;
 }
@@ -7632,4 +7632,14 @@ header h1 {
   text-align: left;
   font-size: 36px;
   color: #ffffff;
+}
+
+/* line 15, ../sass/screen.scss */
+body {
+  font-family: 'Open Sans';
+}
+
+/* line 19, ../sass/screen.scss */
+a {
+  color: #2d91d2;
 }

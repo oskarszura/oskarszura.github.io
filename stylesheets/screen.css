@@ -7616,12 +7616,18 @@ td.visible-print {
 }
 /* line 1, ../sass/partials/_navbar.scss */
 nav.navbar {
+  -moz-border-radius: 0px / 0px;
+  -webkit-border-radius: 0px 0px;
+  border-radius: 0px / 0px;
   margin-bottom: 0px;
   background-color: #2d91d2;
 }
-/* line 5, ../sass/partials/_navbar.scss */
+/* line 6, ../sass/partials/_navbar.scss */
 nav.navbar a {
   color: #ffffff;
+}
+/* line 9, ../sass/partials/_navbar.scss */
+nav.navbar a:hover {
   background-color: #2474a8;
 }
 
@@ -7653,17 +7659,17 @@ header h2 {
   color: #2d91d2;
 }
 
-/* line 15, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
 body {
   font-family: 'Open Sans';
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 h1, h2, h3, h4 {
   font-family: 'Open Sans';
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 a {
   color: #2d91d2;
 }

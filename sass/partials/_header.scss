@@ -1,5 +1,10 @@
 header {
-  background-color: $color-curious-blue;
+  background-color: $color-white;
+  background-image: url('http://i.istockimg.com/image-zoom/52853120/3/380/271/zoom-52853120-3.jpg');
+  background-size: 100%;
+  background-position-y: center;
+  background-position-x: right;
+  background-repeat: no-repeat;
   height: 300px;
   margin-bottom: 10px;
 
@@ -8,6 +13,14 @@ header {
     margin-left: 20px;
     text-align: left;
     font-size: 36px;
-    color: #ffffff;
+    color: $color-curious-blue;
+  }
+
+  h2 {
+    margin-top: 13px;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 20px;
+    color: $color-curious-blue;
   }
 }

@@ -7640,6 +7640,11 @@ body {
 }
 
 /* line 19, ../sass/screen.scss */
+h1, h2, h3, h4 {
+  font-family: 'Open Sans';
+}
+
+/* line 23, ../sass/screen.scss */
 a {
   color: #2d91d2;
 }

@@ -7621,17 +7621,30 @@ nav.navbar {
 
 /* line 1, ../sass/partials/_header.scss */
 header {
-  background-color: #2d91d2;
+  background-color: #ffffff;
+  background-image: url("http://i.istockimg.com/image-zoom/52853120/3/380/271/zoom-52853120-3.jpg");
+  background-size: 100%;
+  background-position-y: center;
+  background-position-x: right;
+  background-repeat: no-repeat;
   height: 300px;
   margin-bottom: 10px;
 }
-/* line 6, ../sass/partials/_header.scss */
+/* line 11, ../sass/partials/_header.scss */
 header h1 {
   margin-top: 13px;
   margin-left: 20px;
   text-align: left;
   font-size: 36px;
-  color: #ffffff;
+  color: #2d91d2;
+}
+/* line 19, ../sass/partials/_header.scss */
+header h2 {
+  margin-top: 13px;
+  margin-left: 20px;
+  text-align: left;
+  font-size: 20px;
+  color: #2d91d2;
 }
 
 /* line 15, ../sass/screen.scss */

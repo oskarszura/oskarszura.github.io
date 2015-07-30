@@ -7617,6 +7617,12 @@ td.visible-print {
 /* line 1, ../sass/partials/_navbar.scss */
 nav.navbar {
   margin-bottom: 0px;
+  background-color: #2d91d2;
+}
+/* line 5, ../sass/partials/_navbar.scss */
+nav.navbar a {
+  color: #ffffff;
+  background-color: #2474a8;
 }
 
 /* line 1, ../sass/partials/_header.scss */

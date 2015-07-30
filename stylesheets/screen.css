@@ -7622,7 +7622,7 @@ nav.navbar {
 /* line 1, ../sass/partials/_header.scss */
 header {
   background-color: #ffffff;
-  background-image: url("/assets/images/book-learning-javascript-design-patterns.jpg");
+  background-image: url("/assets/images/header-background.jpg");
   background-size: 100%;
   background-position-y: center;
   background-position-x: right;

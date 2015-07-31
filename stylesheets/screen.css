@@ -7644,7 +7644,7 @@ header {
 header h1 {
   margin-top: 110px;
   margin-left: 70px;
-  text-align: left;
+  text-align: center;
   font-size: 36px;
   color: #2d91d2;
 }
@@ -7652,9 +7652,13 @@ header h1 {
 header h2 {
   margin-top: 13px;
   margin-left: 70px;
-  text-align: left;
+  text-align: center;
   font-size: 20px;
   color: #2d91d2;
+}
+/* line 26, ../sass/partials/_header.scss */
+header .col-sm-4:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* line 16, ../sass/screen.scss */

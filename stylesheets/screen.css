@@ -7633,6 +7633,8 @@ nav.navbar a:hover {
 
 /* line 1, ../sass/partials/_header.scss */
 header {
+  -webkit-transition: background-position-y 500ms linear 0s;
+  transition: background-position-y 500ms linear 0s;
   background-image: url("http://i.istockimg.com/image-zoom/40849990/3/380/253/zoom-40849990-3.jpg");
   background-repeat: no-repeat;
   background-position-y: -13px;
@@ -7640,11 +7642,17 @@ header {
   height: 300px;
   margin-bottom: 10px;
 }
-/* line 9, ../sass/partials/_header.scss */
+/* line 10, ../sass/partials/_header.scss */
+header:hover {
+  -webkit-transition: background-position-y 500ms linear 0s;
+  transition: background-position-y 500ms linear 0s;
+  background-position-y: -130px;
+}
+/* line 15, ../sass/partials/_header.scss */
 header .col-sm-4 {
   height: 300px;
 }
-/* line 12, ../sass/partials/_header.scss */
+/* line 18, ../sass/partials/_header.scss */
 header .col-sm-4 h1 {
   -webkit-transition: font-size 200ms linear 0s;
   transition: font-size 200ms linear 0s;
@@ -7653,7 +7661,7 @@ header .col-sm-4 h1 {
   font-size: 36px;
   color: #2d91d2;
 }
-/* line 20, ../sass/partials/_header.scss */
+/* line 26, ../sass/partials/_header.scss */
 header .col-sm-4 h2 {
   -webkit-transition: font-size 200ms linear 0s;
   transition: font-size 200ms linear 0s;
@@ -7662,17 +7670,17 @@ header .col-sm-4 h2 {
   font-size: 20px;
   color: #2d91d2;
 }
-/* line 28, ../sass/partials/_header.scss */
+/* line 34, ../sass/partials/_header.scss */
 header .col-sm-4:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
-/* line 31, ../sass/partials/_header.scss */
+/* line 37, ../sass/partials/_header.scss */
 header .col-sm-4:hover h1 {
   -webkit-transition: font-size 200ms linear 0s;
   transition: font-size 200ms linear 0s;
   font-size: 44px;
 }
-/* line 36, ../sass/partials/_header.scss */
+/* line 42, ../sass/partials/_header.scss */
 header .col-sm-4:hover h2 {
   -webkit-transition: font-size 200ms linear 0s;
   transition: font-size 200ms linear 0s;

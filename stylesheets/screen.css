@@ -7635,7 +7635,7 @@ nav.navbar a:hover {
 header {
   -webkit-transition: background-position-y 500ms linear 0s;
   transition: background-position-y 500ms linear 0s;
-  background-image: url("http://i.istockimg.com/image-zoom/40849990/3/380/253/zoom-40849990-3.jpg");
+  background-image: url("/assets/images/header-background.jpg");
   background-repeat: no-repeat;
   background-position-y: -13px;
   background-size: 100%;

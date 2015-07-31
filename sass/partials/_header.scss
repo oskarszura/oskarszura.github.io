@@ -1,9 +1,8 @@
 header {
-  background-color: $color-desert-storm;
-  background-size: 100%;
-  background-position-y: center;
-  background-position-x: right;
+  background-image: url('http://i.istockimg.com/image-zoom/40849990/3/380/253/zoom-40849990-3.jpg');
   background-repeat: no-repeat;
+  background-position-y: -13px;
+  background-size: 100%;
   height: 300px;
   margin-bottom: 10px;
 
@@ -21,24 +20,5 @@ header {
     text-align: center;
     font-size: 20px;
     color: $color-curious-blue;
-  }
-
-  .col-sm-4 {
-    height: 300px;
-
-    &:hover {
-      background-color: darken($color-desert-storm, 10%);
-    }
-  }
-
-  .col-sm-4:nth-child(2) {
-    background-color: $color-seashell;
-    background-image: url('/assets/images/header-github.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-
-    &:hover {
-      background-color: darken($color-seashell, 10%);
-    }
   }
 }

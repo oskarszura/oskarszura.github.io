@@ -35,7 +35,7 @@ header {
 
       h2 {
         @include single-transition(font-size, 200ms, linear, 0s);
-        font-size: 28px;
+        font-size: 24px;
       }
     }
   }

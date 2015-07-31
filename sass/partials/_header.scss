@@ -25,9 +25,17 @@ header {
 
   .col-sm-4 {
     height: 300px;
+
+    &:hover {
+      background-color: darken($color-desert-storm, 10%);
+    }
   }
 
   .col-sm-4:nth-child(2) {
     background-color: $color-seashell;
+
+    &:hover {
+      background-color: darken($color-seashell, 10%);
+    }
   }
 }

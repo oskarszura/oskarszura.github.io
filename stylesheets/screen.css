@@ -7661,9 +7661,17 @@ header h2 {
 header .col-sm-4 {
   height: 300px;
 }
-/* line 30, ../sass/partials/_header.scss */
+/* line 29, ../sass/partials/_header.scss */
+header .col-sm-4:hover {
+  background-color: #e7e3d3;
+}
+/* line 34, ../sass/partials/_header.scss */
 header .col-sm-4:nth-child(2) {
   background-color: #F1F3F0;
+}
+/* line 37, ../sass/partials/_header.scss */
+header .col-sm-4:nth-child(2):hover {
+  background-color: #d7dcd4;
 }
 
 /* line 16, ../sass/screen.scss */

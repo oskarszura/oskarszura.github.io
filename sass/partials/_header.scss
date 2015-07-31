@@ -33,6 +33,9 @@ header {
 
   .col-sm-4:nth-child(2) {
     background-color: $color-seashell;
+    background-image: url('/assets/header-github.png');
+    background-repeat: no-repeat;
+    background-position: center center;
 
     &:hover {
       background-color: darken($color-seashell, 10%);

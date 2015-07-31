@@ -7668,8 +7668,11 @@ header .col-sm-4:hover {
 /* line 34, ../sass/partials/_header.scss */
 header .col-sm-4:nth-child(2) {
   background-color: #F1F3F0;
+  background-image: url("/assets/header-github.png");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-/* line 37, ../sass/partials/_header.scss */
+/* line 40, ../sass/partials/_header.scss */
 header .col-sm-4:nth-child(2):hover {
   background-color: #d7dcd4;
 }

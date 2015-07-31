@@ -7641,39 +7641,55 @@ header {
   margin-bottom: 10px;
 }
 /* line 9, ../sass/partials/_header.scss */
-header h1 {
+header .col-sm-4 {
+  height: 300px;
+}
+/* line 12, ../sass/partials/_header.scss */
+header .col-sm-4 h1 {
+  -webkit-transition: font-size 200ms linear 0s;
+  transition: font-size 200ms linear 0s;
   margin-top: 110px;
   text-align: center;
   font-size: 36px;
   color: #2d91d2;
 }
-/* line 16, ../sass/partials/_header.scss */
-header h2 {
+/* line 20, ../sass/partials/_header.scss */
+header .col-sm-4 h2 {
+  -webkit-transition: font-size 200ms linear 0s;
+  transition: font-size 200ms linear 0s;
   margin-top: 13px;
   text-align: center;
   font-size: 20px;
   color: #2d91d2;
 }
-/* line 23, ../sass/partials/_header.scss */
-header .col-sm-4 {
-  height: 300px;
-}
-/* line 26, ../sass/partials/_header.scss */
+/* line 28, ../sass/partials/_header.scss */
 header .col-sm-4:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
+/* line 31, ../sass/partials/_header.scss */
+header .col-sm-4:hover h1 {
+  -webkit-transition: font-size 200ms linear 0s;
+  transition: font-size 200ms linear 0s;
+  font-size: 44px;
+}
+/* line 36, ../sass/partials/_header.scss */
+header .col-sm-4:hover h2 {
+  -webkit-transition: font-size 200ms linear 0s;
+  transition: font-size 200ms linear 0s;
+  font-size: 28px;
+}
 
-/* line 16, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 body {
   font-family: 'Open Sans';
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 h1, h2, h3, h4 {
   font-family: 'Open Sans';
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 a {
   color: #2d91d2;
 }

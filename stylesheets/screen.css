@@ -7656,7 +7656,11 @@ header h2 {
   font-size: 20px;
   color: #2d91d2;
 }
-/* line 26, ../sass/partials/_header.scss */
+/* line 25, ../sass/partials/_header.scss */
+header .col-sm-4 {
+  height: 300px;
+}
+/* line 28, ../sass/partials/_header.scss */
 header .col-sm-4:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }

@@ -32,7 +32,7 @@ header {
     }
 
     &:hover {
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.7);
 
       h1 {
         @include single-transition(font-size, 200ms, linear, 0s);

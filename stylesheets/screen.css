@@ -7672,7 +7672,7 @@ header .col-sm-4 h2 {
 }
 /* line 34, ../sass/partials/_header.scss */
 header .col-sm-4:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 /* line 37, ../sass/partials/_header.scss */
 header .col-sm-4:hover h1 {

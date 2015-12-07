@@ -1,0 +1,12 @@
+.example {
+  margin: 5px 0 5px 0;
+  padding: 10px;
+  padding-top: 0px;
+  border: 1px solid $color-celeste;
+
+  &::before {
+    content: 'Example';
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+}

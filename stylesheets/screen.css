@@ -7712,11 +7712,24 @@ h5 {
   text-transform: uppercase;
 }
 
-/* line 1, ../sass/articles/2015-12-06-css-tricks.scss */
+/* line 1, ../sass/articles/_2015-12-06-css-tricks.scss */
 nav.example-2015-12-06-1 a {
   display: inline-block;
   padding: 2px 3px;
   border: 1px solid #2d91d2;
+}
+
+/* line 8, ../sass/articles/_2015-12-06-css-tricks.scss */
+div.example-2015-12-06-2 nav.my-nav a {
+  color: #000099;
+}
+/* line 12, ../sass/articles/_2015-12-06-css-tricks.scss */
+div.example-2015-12-06-2 nav.my-nav a.nav-button {
+  color: #009999;
+}
+/* line 16, ../sass/articles/_2015-12-06-css-tricks.scss */
+div.example-2015-12-06-2 .nav-button.nav-button.nav-button {
+  color: #990000;
 }
 
 /* line 21, ../sass/screen.scss */

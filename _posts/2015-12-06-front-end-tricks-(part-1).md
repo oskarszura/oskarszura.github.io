@@ -179,3 +179,6 @@ The CSS styles are applied along with the specificity values and there are no ex
 ##### Conclusion
 
 The specificity is one of the most fundamental concepts in regards to the CSS. The knowledge of how styles are being applied can save a lot of time.
+
+#### Additional materials
+* <a href="/assets/presentations/2015-12-06-front-end-tricks-(part-1).pdf">Presentation</a>

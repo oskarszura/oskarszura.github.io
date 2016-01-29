@@ -42,12 +42,43 @@ in the above example the .list class is a block and it's built-up from .list__it
 **More:** [Externals: http://getbem.com](www.getbem.com)
 
 #### OOCSS
-Why: Object oriented CSS is widely applied technique which makes the code more reusable and DRY - it implicates the styles more light-weight.
+Object oriented CSS is widely applied technique which makes the code more reusable and DRY - so they're also more light-weight. This technique has two fundamental principles:
 
-What's it about:
+"There are two main principles [in object-oriented CSS]: the first is to separate the structure from the skin and the second is to separate the container from the content." - [http://www.stubbornella.org/](by Nicole Sullivan)
+
+The above quote is a philosophy of the OOCSS principle in a nutshell. Let's get throught a simple example of how to implement such the principles.
+
+<pre><code>
+    .menu { // container
+        width: 100%;
+        display: block;
+        
+        .position {
+            border: 1px solid #000000;
+            display: inline-block;
+        }
+
+    }
+</code></pre>
+
+<pre><code>
+    <div class="menu">
+        <div class="position">
+            Position 1
+        </div>
+        <div class="position">
+            Position 2
+        </div>
+        <div class="position">
+            Position 3
+        </div>        
+    </div>    
+</code></pre>
+
+Now as you can see the content and skin is completly separated from the container - hence we may apply this class to any object there is and style it along with it's design freely.
 
 #### Inverted triangle CSS
-Why: This method raised to solve the ['specificity wars'][(https://stuffandnonsense.co.uk/archives/css_specificity_wars.html) issue.
+Why: This method raised to solve the [https://stuffandnonsense.co.uk/archives/css_specificity_wars.html](specificity wars) problem.
 
 What's it about:
 

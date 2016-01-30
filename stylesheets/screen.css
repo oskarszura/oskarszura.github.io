@@ -7746,3 +7746,9 @@ h1, h2, h3, h4 {
 a {
   color: #2d91d2;
 }
+
+/* line 33, ../sass/screen.scss */
+blockquote {
+  font-style: italic;
+  color: #7B7874;
+}

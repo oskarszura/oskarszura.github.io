@@ -250,6 +250,6 @@ As you probably have noticed, when we have those selectors ordered from the most
 
 #### Conclusion
 
-We've went through few patterns and now you know how to apply each of those methods. From my personal experience I can say that applying those patterns at my projects was life-saving in regards to the CSS maintenance. There's no much examples of how to actually apply OOBEMITSCSS, but I'll try to add something in the future. 
+We've went through few patterns and now you know how to apply each of those methods. From my personal experience I can say that applying those patterns at my projects was life-saving in regards to the CSS maintenance. There's no much examples of how to actually apply OOBEMITSCSS, but here's a quickly made [example](https://github.com/oskarszura/sample-oobemitcss-implementation). 
 
 

@@ -7732,22 +7732,32 @@ div.example-2015-12-06-2 .nav-button.nav-button.nav-button {
   color: #990000;
 }
 
-/* line 21, ../sass/screen.scss */
+/* line 3, ../sass/articles/_2016-04-04-modern-css-layouting.scss */
+.example-2016-04-04-1 .column-1 {
+  box-sizing: border-box;
+  min-height: 1px;
+  position: relative;
+  display: block;
+  float: left;
+  width: 10%;
+}
+
+/* line 22, ../sass/screen.scss */
 body {
   font-family: 'Open Sans';
 }
 
-/* line 25, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 h1, h2, h3, h4 {
   font-family: 'Open Sans';
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 a {
   color: #2d91d2;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 blockquote {
   font-style: italic;
   color: #7B7874;

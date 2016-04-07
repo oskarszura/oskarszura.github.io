@@ -2,6 +2,7 @@
 layout: post
 category: Others
 published: true
+tags: css contain
 ---
 
 Lately I've been reviewing [CSS Working Group draft list](https://drafts.csswg.org/) for new features and noticed something related with my current interest of developing isolated webcomponents. While developing mentioned webcomponents, you'd like to probably have them separated in every aspect there is. When it comes to JavaScript, the things here are simple. In contrast CSS separation ain't that easy. If you want area that won't affect the rest of the layout and won't trigger a lot of unnecessary computations - things got trickier. That is the case when you might find the 'contain' property helpful.

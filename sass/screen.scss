@@ -11,10 +11,13 @@
 
 @import "./modules/colors";
 
+@import "./components/tags";
+
 @import "./partials/navbar";
 @import "./partials/header";
 @import "./partials/headers";
 @import "./partials/example";
+@import "./partials/post-list";
 
 @import "./articles/2015-12-06-css-tricks";
 @import "./articles/2016-04-04-modern-css-layouting";

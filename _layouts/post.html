@@ -16,3 +16,11 @@ layout: default
         {% endfor %}
     </ul>
 </div>
+<div class="component-tags">
+    <h4>Tags</h4>
+    {% for tag in page.tags %}
+    <span class="component-tags__tag">
+        {{ tag }}
+    </span>
+    {% endfor %}
+</div>

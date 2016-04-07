@@ -1,6 +1,8 @@
 ---
 layout: post
 category: Others
+published: true
+tags: css front-end document-flow
 ---
 
 CSS and HTML are those part of front-end development which are often neglected by vast majority of developers, hence many of them don't know many interesting nuances of it. In this part I'm going to present few of them:

@@ -2,6 +2,7 @@
 layout: post
 category: Others
 published: true
+tags: css css-grid flex-box layouting
 ---
 
 In the last couple of months we were able to see more and more posts about website layouting. There are number of ways which can obscure the proper direction when it comes about it, hence I'll try to highlight here the right path for you. At least, what I think is the right path.

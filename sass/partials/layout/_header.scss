@@ -1,4 +1,4 @@
-header {
+.main-header {
   @include single-transition(background-position-y, 500ms, linear, 0s);
   background-image: url('/assets/images/header-background.jpg');
   background-repeat: no-repeat;

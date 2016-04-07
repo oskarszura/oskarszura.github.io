@@ -1,6 +1,6 @@
 ---
 layout: post
-category: Others
+category: css
 published: true
 tags: css css-grid flex-box layouting
 ---

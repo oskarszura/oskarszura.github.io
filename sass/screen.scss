@@ -12,12 +12,15 @@
 @import "./modules/colors";
 
 @import "./components/tags";
+@import "./components/example";
 
-@import "./partials/navbar";
-@import "./partials/header";
+@import "./partials/layout/navbar";
+@import "./partials/layout/header";
 @import "./partials/headers";
-@import "./partials/example";
-@import "./partials/post-list";
+@import "./partials/front/post-list";
+
+@import "./partials/post/post";
+@import "./partials/post/related";
 
 @import "./articles/2015-12-06-css-tricks";
 @import "./articles/2016-04-04-modern-css-layouting";

@@ -1,6 +1,6 @@
 ---
 layout: post
-category: Others
+category: css
 published: true
 tags: css front-end document-flow
 ---
@@ -70,7 +70,7 @@ Many of developers are not even aware that it exists. When DOM elements occur on
 
 will output the below
 
-<div class="example">
+<div class="component-example">
 <nav class="example-2015-12-06-1">
   <a href="#">Nav-1</a> <a href="#">Nav-2</a>
   <a href="#">Nav-3</a><a href="#">Nav-4</a>
@@ -159,14 +159,14 @@ The above examples are just sample calculations (you can use [this specificity c
     color: #990000; // 0030 - the strongest
   }
 
-&lt;nav class="my-nav"&gt;
+§&lt;nav class="my-nav"&gt;
   &lt;a class="nav-button" href="#"&gt;Nav-1&lt;/a&gt;
   &lt;a class="nav-button" href="#"&gt;Nav-2&lt;/a&gt;
   &lt;a class="nav-button" href="#"&gt;Nav-3&lt;/a&gt;
 &lt;/nav&gt;
 </code></pre>
 
-<div class="example example-2015-12-06-2">
+<div class="component-example example-2015-12-06-2">
 <nav class="my-nav">
   <a class="nav-button" href="#">Nav-1</a>
   <a class="nav-button" href="#">Nav-2</a>

@@ -5,7 +5,7 @@ published: true
 tags: css css-grid flex-box layouting
 ---
 
-In the last couple of months we were able to see more and more posts about website layouting. There are number of ways which can obscure the proper direction when it comes about it, hence I'll try to highlight here the right path for you. At least, what I think is the right path. Also, please keep in mind that it's not a layouting, flex-box nor grid tutorial. It's just a short write-up about the layouting modern direction. 
+In the last couple of months we were able to see more and more posts about website layouting. There are number of ways which can obscure the proper direction when it comes about it, hence I'll try to highlight here the right path for you. At least, what I think is the right path. Also, please keep in mind that it's not a layouting, flex-box nor grid tutorial. It's just a short write-up about, where the modern layouting is heading. 
 
 #### A little bit of the history
 
@@ -71,7 +71,35 @@ Flexbox introduces six abstractions:
 * Cross axis - perpendicular axis to the main axis (opposite to the main axis direction)
 * Cross start, Cross end - starting and ending point of the cross axis
 * Cross size - flex items size in line with the cross axis
-    
+  
+```html 
+<div class="wrapper">
+<header class="header">header</header>
+<main class="main">main</main>
+<aside class="aside aside-1">aside 1</aside>
+<aside class="aside aside-2">aside 2</aside>
+<footer class="footer">footer</footer>
+</div>
+```
+
+```css
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.header, .aside, .footer {
+  flex: 1 100%;
+}
+
+.aside-1 { order: 1; }
+.main { 
+  flex: 2 0px;
+  order: 2; 
+}
+.aside-2 { order: 3; }
+.footer { order: 4; }
+```
 
 [Can I use 'flexbox'](http://caniuse.com/#feat=flexbox) - global support 94.1% (April 2016)
 
@@ -88,7 +116,37 @@ The css-grid module introduces six abstractions:
 * Grid cell - a single grid unit
 * Grid area - area built of grid cells (separeted by two horizontal and two vertical grid lines)
 
-Grids 
+```html
+<div class="container">
+<header class="item-a">Header</header>
+<main class="item-b">Main</main>
+<aside class="item-c">Sidebar</aside>
+<footer class="item-d">Footer</footer>
+</div>
+```
+
+```css
+.item-a{
+  grid-area: header;
+}
+.item-b{
+  grid-area: main;
+}
+.item-c{
+  grid-area: sidebar;
+}
+.item-d{
+  grid-area: footer;
+}
+
+.container{
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas: "header header header header"
+                       "main main . sidebar"
+                       "footer footer footer footer"
+}
+```
 
 [Can I use 'grids'](http://caniuse.com/#feat=css-grid) - global support 8.1% (April 2016)
 

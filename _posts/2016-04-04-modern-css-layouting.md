@@ -118,10 +118,6 @@ It looks much better than Twitter's Bootstrap grid... but still doesn't resolve 
 
 The least popular method, or at least not so spectacular as flex-box (probably because of it's browsers support) is [css-grid module](https://www.w3.org/TR/css-grid-1/). This one was invented strictly to handle well the modern layouting conundrum - is it the holly grail we've been waiting for? Let's see.
 
-CSS grids allows the cells to have the knowledge where exactly they belong. In contrary to flexbox items we can place grid items wherever we want, however we want and limit them as we want. They just have to have explicitly given boudaries like areas or starting and ending lines.
-
-You may also wonder about it's responsiveness. Don't worry - it has been implemented as well. The grids have something called fractions (shorthand: fr). They work, pretty similar to flexbox 'flex' property filling out available space in givem proportions.
-
 The css-grid module introduces six abstractions:
 
 * Grid container - container for all the grid items (has to have ```css display: grid``` property set)
@@ -130,6 +126,10 @@ The css-grid module introduces six abstractions:
 * Grid track - horizontal or vertical line built of cells and limited by two adjacent grid lines
 * Grid cell - a single grid unit
 * Grid area - area built of grid cells (separeted by two horizontal and two vertical grid lines)
+
+CSS grids allows the cells to have the knowledge where exactly they belong. In contrary to flexbox items we can place grid items wherever we want, however we want and limit them as we want. They just have to have explicitly given boudaries like areas or starting and ending lines.
+
+You may also wonder about it's responsiveness. Don't worry - it has been implemented as well. The grids have something called fractions (shorthand: fr). They work, pretty similar to flexbox 'flex' property filling out available space in givem proportions.
 
 ```html
 <div class="container">

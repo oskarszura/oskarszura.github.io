@@ -66,7 +66,7 @@ looks messy, right? Let's move to the flex-box and see, what's there.
 
 #### CSS flex-box approach 
 
-As you've might noticed already, while reading some posts about web layouting, flex-box is considered as one of the most popular methods for it. It's probably because of it's flexing child elements which do all the responsive job under the hood for you. what you have to know though, is flex-box ain't a tool for layouting. Why? Simple. It's purpose is ONLY to be used while creating some small stand alone widgets or other small components. If you gonna dive into it's technicals, you'll know that you only have control over it in one dimension, horizontal or vertical - but not both.
+As you've might noticed already, while reading some posts about web layouting, flex-box is considered as one of the most popular methods for it. It's probably because of it's flexing child elements which do all the responsive job under the hood for you. What you have to know though, is flex-box ain't a tool for layouting. Why? Simple. It's purpose is ONLY to be used while creating some small stand alone widgets or other small components. If you gonna dive into it's technicals, you'll know that you only have control over it in one dimension, horizontal or vertical - but not both.
 
 Flexbox introduces six abstractions:
 
@@ -79,6 +79,8 @@ Flexbox introduces six abstractions:
 * Cross start, Cross end - starting and ending point of the cross axis
 * Cross size - flex items size in line with the cross axis
   
+This is how a sample flex-box layout implementation would look like:
+
 ```html 
 <div class="wrapper">
 <header class="header">header</header>
@@ -107,6 +109,8 @@ Flexbox introduces six abstractions:
 .aside-2 { order: 3; }
 .footer { order: 4; }
 ```
+
+It looks much better than Twitter's Bootstrap grid... but still doesn't resolve all our problems (like two dimensional layouting). 
 
 [Can I use 'flexbox'](http://caniuse.com/#feat=flexbox) - global support 94.1% (April 2016)
 

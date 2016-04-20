@@ -167,3 +167,8 @@ The css-grid module introduces six abstractions:
 So you may ask now... "ok, so what I should go with then?". In my opinion, it's worth to wait a little while for the CSS grids, as they should be shipped with the new versions of the browsers really soon. The flex-box compatibility coverage might be tempting, but as we've highlighted, it's purpose is not to be used for the layouting. I'd stick with the classic Bootstrap's grid technique in the meantime, while waiting for the silver bullet to come. 
 
 I also strongly advise you to listen [Rachel Andrew's presentation](https://youtu.be/MXEzJ-IncX0) at Fluent Conference, on modern layouting.
+
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```

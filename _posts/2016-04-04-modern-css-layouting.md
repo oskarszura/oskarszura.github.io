@@ -140,7 +140,7 @@ You may also wonder about it's responsiveness. Don't worry - it has been impleme
 </div>
 ```
 
-```css
+{% highlight css %}
 .item-a{
   grid-area: header;
 }
@@ -161,7 +161,7 @@ You may also wonder about it's responsiveness. Don't worry - it has been impleme
                        "main main . sidebar"
                        "footer footer footer footer"
 }
-```
+{% endhighlight %}
 
 
 [Can I use 'grids'](http://caniuse.com/#feat=css-grid) - global support 8.1% (April 2016)

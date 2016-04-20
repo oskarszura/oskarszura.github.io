@@ -19,8 +19,13 @@ The answer is pretty simple, but not that obvious though. One of the most wanted
 
 A huge mile stone in website layouting were modules like Twitter's Bootstrap grid. Those were possible, because of shipping new CSS properties like box-sizing. Along with this new feature, we were able to define total cell's size (including all additional properties like padding or borders). So what where is the catch in this solution? Although this approach seems to be fairly sufficient, there are some lacks in this method:
  
-* messy and unsemantic markups (you use HTML tags to define website look - which is strictly CSS responsibility)
-* no relations between the cells (every cell has no knowledge of it's relatives)
+* unsemantic markups
+* markups overhead
+* markups define website's look (it shouldn't)
+* markups define the ordering (it shouldn't)
+* no relations between the cells (every cell has no knowledge of it's relatives, nor parents)
+
+This is how a sample markups implementation looks like:
 
 ``` html
   <div class="container">
@@ -54,6 +59,8 @@ A huge mile stone in website layouting were modules like Twitter's Bootstrap gri
     </div>     
   </div>
 ```
+ 
+looks messy, right? Let's move to the flex-box and see, what's there. 
  
 [Can I use 'box-sizing'](http://caniuse.com/#feat=css3-boxsizing) - global support 95.41% (April 2016)
 

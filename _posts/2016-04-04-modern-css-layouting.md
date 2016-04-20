@@ -5,7 +5,7 @@ published: true
 tags: css css-grid flex-box layouting
 ---
 
-In the last couple of months we were able to see more and more posts about website layouting. There are number of ways which can obscure the proper direction when it comes about it, hence I'll try to highlight here the right path for you. At least, what I think is the right path.
+In the last couple of months we were able to see more and more posts about website layouting. There are number of ways which can obscure the proper direction when it comes about it, hence I'll try to highlight here the right path for you. At least, what I think is the right path. Also, please keep in mind that it's not a layouting, flex-box nor grid tutorial. It's just a short write-up about the layouting modern direction. 
 
 #### A little bit of the history
 
@@ -17,18 +17,78 @@ The answer is pretty simple, but not that obvious though. One of the most wanted
 
 #### Box-sizing approach
 
-A huge mile stone in website layouting were frameworks like Twitter's Bootstrap. Those were possible, because of shipping new CSS properties like box-sizing.
+A huge mile stone in website layouting were modules like Twitter's Bootstrap grid. Those were possible, because of shipping new CSS properties like box-sizing. Along with this new feature, we were able to define total cell's size (including all additional properties like padding or borders). So what where is the catch in this solution? Although this approach seems to be fairly sufficient, there are some lacks in this method:
+ 
+* messy and unsemantic markups (you use HTML tags to define website look - which is strictly CSS responsibility)
+* no relations between the cells (every cell has no knowledge of it's relatives)
 
+``` html
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        cell-1-1
+      </div>
+      <div class="col-sm-3">
+        cell-1-2
+      </div>
+      <div class="col-sm-3">
+        cell-1-3
+      </div>    
+      <div class="col-sm-3">
+        cell-1-4
+      </div>        
+    </div> 
+    <div class="row">
+      <div class="col-sm-3">
+        cell-2-1
+      </div>
+      <div class="col-sm-3">
+        cell-2-2
+      </div>
+      <div class="col-sm-3">
+        cell-2-3
+      </div>    
+      <div class="col-sm-3">
+        cell-2-4
+      </div>        
+    </div>     
+  </div>
+```
  
 [Can I use 'box-sizing'](http://caniuse.com/#feat=css3-boxsizing) - global support 95.41% (April 2016)
 
 #### CSS flex-box approach 
 
-As you've might noticed already, while reading some posts about web layouting, flex-box is considered as one of the most popular methods for it. It's probably because of it's flexing child elements which do all the responsive job under the hood for you. what you have to know though, is flex-box ain't a tool for layouting. Why? Simple. It's purpose is ONLY to be used while creating some small stand alone widgets or other small components. If you gonna dive into it's technicals, you'll know that you only have control over it in one dimension, horizontal or vertical - but not both.  
+As you've might noticed already, while reading some posts about web layouting, flex-box is considered as one of the most popular methods for it. It's probably because of it's flexing child elements which do all the responsive job under the hood for you. what you have to know though, is flex-box ain't a tool for layouting. Why? Simple. It's purpose is ONLY to be used while creating some small stand alone widgets or other small components. If you gonna dive into it's technicals, you'll know that you only have control over it in one dimension, horizontal or vertical - but not both.
+
+Flexbox introduces six abstractions:
+
+* Flexbox container - container for all flexbox items 
+* Flexbox items - all flexing items within the container (only first children apply)
+* Main axis - axis with which flexing items will be placed along (it can be horizontal or vertical - along with the ```css flex-direction``` property)  
+* Main start, Main end - starting and ending point of the main axis
+* Main size - flex items size in line with the main axis
+* Cross axis - perpendicular axis to the main axis (opposite to the main axis direction)
+* Cross start, Cross end - starting and ending point of the cross axis
+* Cross size - flex items size in line with the cross axis
+    
 
 [Can I use 'flexbox'](http://caniuse.com/#feat=flexbox) - global support 94.1% (April 2016)
 
 #### CSS grid approach
+
+The least popular method, or at least not so spectacular as flex-box (probably because of it's browsers support) is [css-grid module](https://www.w3.org/TR/css-grid-1/). This one was invented strictly to handle well the modern layouting conundrum - is it the holly grail we've been waiting for?
+
+The css-grid module introduces six abstractions:
+
+* Grid container - container for all the grid items (has to have ```css display: grid``` property set)
+* Grid item - grid cells (only first children apply)
+* Grid line - horizontal or vertical line separating (it occur between both, columns and rows)
+* Grid track - horizontal or vertical line built of cells and limited by two adjacent grid lines
+* Grid cell - a single grid unit
+* Grid area - area built of grid cells (separeted by two horizontal and two vertical grid lines)
+
+Grids 
 
 [Can I use 'grids'](http://caniuse.com/#feat=css-grid) - global support 8.1% (April 2016)
 

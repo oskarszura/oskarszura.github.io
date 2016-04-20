@@ -83,11 +83,11 @@ This is how a sample flex-box layout implementation would look like:
 
 ```html 
 <div class="wrapper">
-<header class="header">header</header>
-<main class="main">main</main>
-<aside class="aside aside-1">aside 1</aside>
-<aside class="aside aside-2">aside 2</aside>
-<footer class="footer">footer</footer>
+  <header class="header">Header</header>
+  <main class="main">Main</main>
+  <aside class="aside aside-1">Aside 1</aside>
+  <aside class="aside aside-2">Aside 2</aside>
+  <footer class="footer">Footer</footer>
 </div>
 ```
 
@@ -129,10 +129,10 @@ The css-grid module introduces six abstractions:
 
 ```html
 <div class="container">
-<header class="item-a">Header</header>
-<main class="item-b">Main</main>
-<aside class="item-c">Sidebar</aside>
-<footer class="item-d">Footer</footer>
+  <header class="item-a">Header</header>
+  <main class="item-b">Main</main>
+  <aside class="item-c">Sidebar</aside>
+  <footer class="item-d">Footer</footer>
 </div>
 ```
 
@@ -158,6 +158,7 @@ The css-grid module introduces six abstractions:
                        "footer footer footer footer"
 }
 ```
+
 
 [Can I use 'grids'](http://caniuse.com/#feat=css-grid) - global support 8.1% (April 2016)
 

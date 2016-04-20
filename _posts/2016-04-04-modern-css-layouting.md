@@ -131,16 +131,16 @@ The css-grid module introduces six abstractions:
 * Grid cell - a single grid unit
 * Grid area - area built of grid cells (separeted by two horizontal and two vertical grid lines)
 
-{% highlight HTML linenos %}
+```html
 <div class="container">
   <header class="item-a">Header</header>
   <main class="item-b">Main</main>
   <aside class="item-c">Sidebar</aside>
   <footer class="item-d">Footer</footer>
 </div>
-{% endhighlight %}
+```
 
-{% highlight CSS linenos %}
+```css
 .item-a{
   grid-area: header;
 }
@@ -161,7 +161,7 @@ The css-grid module introduces six abstractions:
                        "main main . sidebar"
                        "footer footer footer footer"
 }
-{% endhighlight %}
+```
 
 
 [Can I use 'grids'](http://caniuse.com/#feat=css-grid) - global support 8.1% (April 2016)

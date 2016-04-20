@@ -1,5 +1,3 @@
-pygments: true
-markdown: kramdown
 category_dir: /categories
 excerpt_separator: <!--more-->
 categories:

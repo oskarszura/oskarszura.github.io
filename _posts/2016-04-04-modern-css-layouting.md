@@ -172,3 +172,23 @@ I also strongly advise you to listen [Rachel Andrew's presentation](https://yout
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
+{% highlight haskell linenos %}
+module Main where
+
+import Prelude
+
+import Node.HTTP
+import Node.Stream
+import Node.Encoding
+
+import Data.Foldable (foldMap)
+
+import Control.Monad.Eff.Console
+
+main = do
+  server <- createServer respond
+  listen server 8080 $ void do  
+    log "Server is listening!"
+  where
+  respond req
+{% endhighlight %}

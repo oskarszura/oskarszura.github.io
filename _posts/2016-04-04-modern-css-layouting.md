@@ -127,14 +127,14 @@ The css-grid module introduces six abstractions:
 * Grid cell - a single grid unit
 * Grid area - area built of grid cells (separeted by two horizontal and two vertical grid lines)
 
-```html
+{% highlight html linenos %}
 <div class="container">
   <header class="item-a">Header</header>
   <main class="item-b">Main</main>
   <aside class="item-c">Sidebar</aside>
   <footer class="item-d">Footer</footer>
 </div>
-```
+{% endhighlight %}
 
 ```css
 .item-a{

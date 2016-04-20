@@ -21,7 +21,7 @@ Block Element Modifier is a CSS pattern [introduced](https://en.bem.info/method/
 
 Let's take a quick example of how this pattern can be applied in practice:
 
-<pre><code>
+```css
     .is-hidden { // mix (not a mixin)
       display: none;
     }
@@ -44,33 +44,33 @@ Let's take a quick example of how this pattern can be applied in practice:
         }
 
     }
-</code></pre>
+```
 
-<pre><code>
-  &lt;ul class="list"&gt;
-    &lt;li class="list__position"&gt;
+```html
+  <ul class="list">
+    <li class="list__position">
       Position 1
-    &lt;/li&gt;
-    &lt;li class="list__position--odd"&gt;
+    </li>
+    <li class="list__position--odd">
       Position 2
-    &lt;/li&gt; 
-    &lt;li class="list__position"&gt;
+    </li> 
+    <li class="list__position">
       Position 3
-    &lt;/li&gt;  
-    &lt;li class="list__position--odd is-hidden"&gt;
+    </li>
+    <li class="list__position--odd is-hidden">
       Position 4
-    &lt;/li&gt;         
-  &lt;/ul&gt;
+    </li>         
+  </ul>
   
-  &lt;ul class="list list--orange"&gt;
-    &lt;li class="list__position"&gt;
+  <ul class="list list--orange">
+    <li class="list__position">
       No positions :(
-    &lt;/li&gt;  
-  &lt;/ul&gt;
+    </li>  
+  </ul>
   
-  &lt;p class="is-hidden"&gt;
+  <p class="is-hidden">
     Secret message
-  &lt;/p&gt;
+  </p>
 </code></pre>
 
 In the above example the .list class is a (independent) block. It's built-up from .list__position elements. Both the .list block and the .list__position element have it's modifiers - respectively .list--orange and .list__position--odd. Modifiers are tightly related with it's blocks or elements, and can be applied only to them. As you've may also noticed there's .is-hidden mix - those can be applied to any block or element (or actually anything else) and they're not related logically with any of them.
@@ -96,7 +96,7 @@ I think it was pretty intuitive to you to conclude that an object (or a "structu
 
 At this moment, we have cleared all the concepts so let's get through a simple example of how to implement such the principles in the real world.
 
-<pre><code>
+```css
   .menu { // object
     width: 100%;
     display: block;
@@ -121,23 +121,23 @@ At this moment, we have cleared all the concepts so let's get through a simple e
       border: 1px solid $color-bright-red;
     }
   }
-</code></pre>
+```
 
-<pre><code>
-  &lt;main&gt;
-    &lt;div class="menu menu-skin-blue"&gt;
-      &lt;div class="position"&gt;
+```html
+  <main>
+    <div class="menu menu-skin-blue">
+      <div class="position">
         Position 1
-      &lt;/div&gt;
-      &lt;div class="position"&gt;
+      </div>
+      <div class="position">
         Position 2
-      &lt;/div&gt;
-      &lt;div class="position"&gt;
+      </div>
+      <div class="position">
         Position 3
-      &lt;/div&gt;        
-    &lt;/div> 
-  &lt;/main&gt;
-</code></pre>
+      </div>        
+    </div> 
+  </main>
+```
 
 As you can see we keep the skins separated from the structures as well as the containers from it's content - hence we may apply the object (the .menu class) to any element there is and skin it freely.
 
@@ -146,7 +146,7 @@ As you can see we keep the skins separated from the structures as well as the co
 #### IT CSS - Inverted triangle CSS
 This method raised to solve the [specificity wars](https://stuffandnonsense.co.uk/archives/css_specificity_wars.html) conundrum. It's more a writing technique rather than a pattern. In many cases when you write CSS code it's hard to guess after a while what specificity should you assign to a particular selector - as previously there's probably a lot of nesting, IDs and importants. So why not keeping it clear and simple from the start? IT CSS says to write the most generic code at the very top and the most specific code at the bottom. Let's analyse the code below:
  
-<pre><code>
+```css
   // bad code 
   
   .selector-1 { // specificity 0,0,1,0
@@ -184,13 +184,13 @@ This method raised to solve the [specificity wars](https://stuffandnonsense.co.u
       }
     }
   }
-</code></pre>
+```
 
 The above selectors specificity has a visual graph representation below. You can probably see that it's a bit messy, and every nest or ID will keep you confused about a specificity. Now let's sort the selectors in a proper order. 
 
 <img src="/assets/images/2015-09-13-01.png" />
 
-<pre><code>
+```css
   // good code 
   
   .selector-1 { // specificity 0,0,1,0
@@ -240,7 +240,7 @@ The above selectors specificity has a visual graph representation below. You can
       // styles
     }
   }
-</code></pre>
+```
 
 As you probably have noticed, when we have those selectors ordered from the most generic to the most specific - it's relatively easy to add some further code, without over writing the previously created styles. 
 

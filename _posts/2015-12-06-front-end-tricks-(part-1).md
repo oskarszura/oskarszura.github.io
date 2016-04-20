@@ -23,28 +23,32 @@ The document flow can be affected by only two CSS properties which are *float* a
 
 Let's get through an example:
 
-<pre><code>&lt;div&gt;
-    &lt;div style="float: left;"&gt;Sample DIV&lt;/div&gt;
-    &lt;div style="clear: both;"&gt;&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+```html
+  <div>
+    <div style="float: left;">Sample DIV</div>
+    <div style="clear: both;"></div>
+  </div>
+```
 
 In the above we use native *clear: both* in order to restore a floated div element to the normal document flow within the document.
 
 Another, more popular method (but also the one which requires more modern browsers - because of the property *content: " "* ) it the 'clearfix' technique. The most beneficial thing coming from this technique is avoiding an extra tag at the very end.
 
-<pre><code>.clearfix:after {
+```css
+  .clearfix:after {
    content: " ";
    visibility: hidden;
    display: block;
    height: 0;
    clear: both;
 }
+```
 
-&lt;div class="clearfix"&gt;
-   &lt;div style="float: left;" class="clearfix"&gt;Sample DIV&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+```html
+<div class="clearfix">
+  <div style="float: left;" class="clearfix">Sample DIV</div>
+</div>
+```
 
 ##### Conclusion
 
@@ -56,17 +60,19 @@ Keep in mind what is the normal flow of the document and how it can be impacted.
 
 Many of developers are not even aware that it exists. When DOM elements occur one after another and their 'display' property is set to 'inline' or 'inline-block'  and their HTML markups contain return or space, a gap between them is created.
 
-<pre><code>&lt;nav&gt;
-  &lt;a href="#"&gt;Nav-1&lt;/a&gt; &lt;a href="#"&gt;Nav-2&lt;/a&gt;
-  &lt;a href="#"&gt;Nav-3&lt;/a&gt;&lt;a href="#"&gt;Nav-4&lt;/a&gt;
-&lt;/nav&gt;
-</code></pre>
+```html
+<nav>
+  <a href="#">Nav-1</a> <a href="#">Nav-2</a>
+  <a href="#">Nav-3</a><a href="#">Nav-4</a>
+</nav>
+```
 
-<pre><code>nav a {
+```css
+nav a {
   display: inline-block;
   padding: 2px 3px;
 }
-</code></pre>
+```
 
 will output the below
 
@@ -85,32 +91,37 @@ Unfortunately there's no straight-forward solution for this issue but there are 
 
 * Skip the white spaces between the markups (between the closing and opening braces should be no space in any form)
 
-<pre><code>&lt;nav&gt;
-  &lt;a href="#"&gt;Nav-1&lt;/a&gt;&lt;a href="#"&gt;Nav-2&lt;/a&gt;&lt;a href="#"&gt;Nav-3&lt;/a&gt;&lt;a href="#"&gt;Nav-4&lt;/a&gt;
-&lt;/nav&gt;</code></pre>
+```html
+<nav>
+  <a href="#">Nav-1</a><a href="#">Nav-2</a><a href="#">Nav-3</a><a href="#">Nav-4</a>
+</nav>
+```
 
 * Set negative margins between the particular elements.
 
-<pre><code>nav a {
+```css 
+nav a {
   display: inline-block;
   padding: 2px 3px;
   margin-left: -4px;
 }
-</code></pre>
+```
 
 * Remove the closing tags
 
-<pre><code>&lt;nav&gt;
-  &lt;a href="#"&gt;Nav-1
-  &lt;a href="#"&gt;Nav-2
-  &lt;a href="#"&gt;Nav-3
-  &lt;a href="#"&gt;Nav-4
-&lt;/nav&gt;
-</code></pre>
+```html
+<nav>
+  <a href="#">Nav-1
+  <a href="#">Nav-2
+  <a href="#">Nav-3
+  <a href="#">Nav-4
+</nav>
+```
 
 * Set to the container property *font-size: 0*
 
-<pre><code>nav a {
+```css
+nav a {
   display: inline-block;
   padding: 2px 3px;
   font-size: 12px;
@@ -119,7 +130,7 @@ Unfortunately there's no straight-forward solution for this issue but there are 
 nav {
   font-size: 0;
 }
-</code></pre>
+```
 
 ##### Conclusion
 
@@ -139,15 +150,17 @@ Every selector type has assigned specificity factor:
 
 pretty simple, right? Let's take a look at some examples then.
 
-<pre><code>nav a {} // specificity = 1 + 1 = 2
-#my-account .login // specificity = 1000 + 100 = 1100
-a::before // specificity = 1 + 1 = 2
-.nav-button.nav-button.nav-button // specificity = 100 + 100 + 100 = 300
-</code></pre>
+```css
+nav a {} // specificity = 1 + 1 = 2
+#my-account .login {} // specificity = 1000 + 100 = 1100
+a::before {} // specificity = 1 + 1 = 2
+.nav-button.nav-button.nav-button {} // specificity = 100 + 100 + 100 = 300
+```
 
 The above examples are just sample calculations (you can use [this specificity calculator](https://specificity.keegan.st/) to play with some values). But let's take a look at some real-life example:
 
-<pre><code>nav.my-nav a {
+```css
+  nav.my-nav a {
     color: #000099; // 0012
   }
 
@@ -158,13 +171,15 @@ The above examples are just sample calculations (you can use [this specificity c
   .nav-button.nav-button.nav-button {
     color: #990000; // 0030 - the strongest
   }
+```
 
-§&lt;nav class="my-nav"&gt;
+```html
+<nav class="my-nav">
   &lt;a class="nav-button" href="#"&gt;Nav-1&lt;/a&gt;
   &lt;a class="nav-button" href="#"&gt;Nav-2&lt;/a&gt;
   &lt;a class="nav-button" href="#"&gt;Nav-3&lt;/a&gt;
-&lt;/nav&gt;
-</code></pre>
+</nav>
+```
 
 <div class="component-example example-2015-12-06-2">
 <nav class="my-nav">

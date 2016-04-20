@@ -1,3 +1,4 @@
+pygments: true
 category_dir: /categories
 excerpt_separator: <!--more-->
 categories:

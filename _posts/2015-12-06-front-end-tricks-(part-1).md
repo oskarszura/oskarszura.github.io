@@ -151,33 +151,33 @@ Every selector type has assigned specificity factor:
 pretty simple, right? Let's take a look at some examples then.
 
 ```css
-nav a {} // specificity = 1 + 1 = 2
-#my-account .login {} // specificity = 1000 + 100 = 1100
-a::before {} // specificity = 1 + 1 = 2
-.nav-button.nav-button.nav-button {} // specificity = 100 + 100 + 100 = 300
+nav a {} /* specificity = 1 + 1 = 2 */
+#my-account .login {} /* specificity = 1000 + 100 = 1100 */
+a::before {} /* specificity = 1 + 1 = 2 */
+.nav-button.nav-button.nav-button {} /* specificity = 100 + 100 + 100 = 300 */
 ```
 
 The above examples are just sample calculations (you can use [this specificity calculator](https://specificity.keegan.st/) to play with some values). But let's take a look at some real-life example:
 
 ```css
   nav.my-nav a {
-    color: #000099; // 0012
+    color: #000099; /* 0012 */
   }
 
   nav.my-nav a.nav-button {
-    color: #009999; // 0022
+    color: #009999; /* 0022 */
   }
 
   .nav-button.nav-button.nav-button {
-    color: #990000; // 0030 - the strongest
+    color: #990000; /* 0030 - the strongest */
   }
 ```
 
 ```html
 <nav class="my-nav">
-  &lt;a class="nav-button" href="#"&gt;Nav-1&lt;/a&gt;
-  &lt;a class="nav-button" href="#"&gt;Nav-2&lt;/a&gt;
-  &lt;a class="nav-button" href="#"&gt;Nav-3&lt;/a&gt;
+  <a class="nav-button" href="#">Nav-1</a>
+  <a class="nav-button" href="#">Nav-2</a>
+  <a class="nav-button" href="#">Nav-3</a>
 </nav>
 ```
 
@@ -196,6 +196,3 @@ The CSS styles are applied along with the specificity values and there are no ex
 ##### Conclusion
 
 The specificity is one of the most fundamental concepts in regards to the CSS. The knowledge of how styles are being applied can save a lot of time.
-
-#### Additional materials
-* <a href="/assets/presentations/2015-12-06-front-end-tricks-(part-1).pdf">Presentation</a>

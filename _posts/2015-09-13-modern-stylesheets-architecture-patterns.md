@@ -21,25 +21,25 @@ Block Element Modifier is a CSS pattern [introduced](https://en.bem.info/method/
 
 Let's take a quick example of how this pattern can be applied in practice:
 
-```css
-    .is-hidden { // mix (not a mixin)
+```scss
+    .is-hidden { /* mix (not a mixin) */
       display: none;
     }
 
-    .list { // block
+    .list { // block 
         position: relative;
         background-color: white;
 
-        &__position { // element
+        &__position { // element 
             border: 1px solid black;
 
-            &--odd { // element modifier
+            &--odd { // element modifier 
                 background-color: gray;
             }
 
         }
 
-        &--orange { // block modifier
+        &--orange { // block modifier 
             background-color: orange;
         }
 
@@ -72,6 +72,7 @@ Let's take a quick example of how this pattern can be applied in practice:
     Secret message
   </p>
 </code></pre>
+```
 
 In the above example the .list class is a (independent) block. It's built-up from .list__position elements. Both the .list block and the .list__position element have it's modifiers - respectively .list--orange and .list__position--odd. Modifiers are tightly related with it's blocks or elements, and can be applied only to them. As you've may also noticed there's .is-hidden mix - those can be applied to any block or element (or actually anything else) and they're not related logically with any of them.
  
@@ -96,7 +97,7 @@ I think it was pretty intuitive to you to conclude that an object (or a "structu
 
 At this moment, we have cleared all the concepts so let's get through a simple example of how to implement such the principles in the real world.
 
-```css
+```scss
   .menu { // object
     width: 100%;
     display: block;
@@ -146,7 +147,7 @@ As you can see we keep the skins separated from the structures as well as the co
 #### IT CSS - Inverted triangle CSS
 This method raised to solve the [specificity wars](https://stuffandnonsense.co.uk/archives/css_specificity_wars.html) conundrum. It's more a writing technique rather than a pattern. In many cases when you write CSS code it's hard to guess after a while what specificity should you assign to a particular selector - as previously there's probably a lot of nesting, IDs and importants. So why not keeping it clear and simple from the start? IT CSS says to write the most generic code at the very top and the most specific code at the bottom. Let's analyse the code below:
  
-```css
+```scss
   // bad code 
   
   .selector-1 { // specificity 0,0,1,0
@@ -190,7 +191,7 @@ The above selectors specificity has a visual graph representation below. You can
 
 <img src="/assets/images/2015-09-13-01.png" />
 
-```css
+```scss
   // good code 
   
   .selector-1 { // specificity 0,0,1,0

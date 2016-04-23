@@ -5,7 +5,7 @@ published: true
 tags: css css-grid flex-box layouting
 ---
 
-In the last couple of months we were able to see more and more posts about website layouting. There are number of ways which can obscure the proper direction when it comes about it, hence I'll try to highlight here the right path for you. At least, what I think is the right path. Also, please keep in mind that it's not a layouting, flex-box nor grid tutorial. It's just a short write-up about, where the modern layouting is heading. 
+In the last couple of months we were able to see more and more posts about website layouting. There are number of ways which can obscure the proper direction when it comes about it, hence I'll try to highlight here the right path for you. At least, what I think is the right path. Also, please keep in mind that it's not a layouting, flex-box nor grid tutorial. It's just a short write-up, about where the modern layouting is heading. 
 
 #### A little bit of the history
 
@@ -68,16 +68,20 @@ looks messy, right? Let's move to the flex-box and see, what's there.
 
 As you've might noticed already, while reading some posts about web layouting, flex-box is considered as one of the most popular methods for it. It's probably because of it's flexing child elements which do all the responsive job under the hood for you. What you have to know though, is flex-box ain't a tool for layouting. Why? Simple. It's purpose is ONLY to be used while creating some small stand alone widgets or other small components. If you gonna dive into it's technicals, you'll know that you only have control over it in one dimension, horizontal or vertical - but not both.
 
-Flexbox introduces six abstractions:
+Flexbox introduces few abstractions:
 
 * Flexbox container - container for all flexbox items 
 * Flexbox items - all flexing items within the container (only first children apply)
-* Main axis - axis with which flexing items will be placed along (it can be horizontal or vertical - along with the ```css flex-direction``` property)  
+* Main axis - axis with which flexing items will be placed along (it can be horizontal or vertical - along with the **flex-direction** property)  
 * Main start, Main end - starting and ending point of the main axis
 * Main size - flex items size in line with the main axis
 * Cross axis - perpendicular axis to the main axis (opposite to the main axis direction)
 * Cross start, Cross end - starting and ending point of the cross axis
 * Cross size - flex items size in line with the cross axis
+  
+The schema below will visualize those concepts better for you:  
+  
+<embed type="image/svg+xml" src="/assets/images/2016-04-04-01.svg" />  
   
 This is how a sample flex-box layout implementation would look like:
 
@@ -110,7 +114,7 @@ This is how a sample flex-box layout implementation would look like:
 .footer { order: 4; }
 ```
 
-It looks much better than Twitter's Bootstrap grid... but still doesn't resolve all our problems (like two dimensional layouting). 
+It looks much better than Twitter's Bootstrap grid. It's more semantic and clean. It still doesn't resolve all our problems. As you've might noticed, we can have control over flex-box only in one dimension. We won't be able to control it horizontally and vertically - what is essential for modern website layouting.    
 
 [Can I use 'flexbox'](http://caniuse.com/#feat=flexbox) - global support 94.1% (April 2016)
 
@@ -120,16 +124,18 @@ The least popular method, or at least not so spectacular as flex-box (probably b
 
 The css-grid module introduces six abstractions:
 
-* Grid container - container for all the grid items (has to have ```css display: grid``` property set)
-* Grid item - grid cells (only first children apply)
+* Grid container - container for all the grid items (has to have **css display: grid** property set)
+* Grid item - one or more grid cells grouped as a single item (only first children apply)
 * Grid line - horizontal or vertical line separating (it occur between both, columns and rows)
 * Grid track - horizontal or vertical line built of cells and limited by two adjacent grid lines
 * Grid cell - a single grid unit
-* Grid area - area built of grid cells (separeted by two horizontal and two vertical grid lines)
+* Grid area - area built of grid cells (separated by two horizontal and two vertical grid lines)
 
-CSS grids allows the cells to have the knowledge where exactly they belong. In contrary to flexbox items we can place grid items wherever we want, however we want and limit them as we want. They just have to have explicitly given boudaries like areas or starting and ending lines.
+<embed type="image/svg+xml" src="/assets/images/2016-04-04-02.svg" />
 
-You may also wonder about it's responsiveness. Don't worry - it has been implemented as well. The grids have something called fractions (shorthand: fr). They work, pretty similar to flexbox 'flex' property filling out available space in givem proportions.
+CSS grids allows the cells to have the knowledge where exactly they belong. In contrary to flexbox items we can place grid items wherever we want, how we want and limit them as we want. They just have to have explicitly given boundaries like areas or starting and ending lines.
+
+You may also wonder about it's responsiveness. Don't worry - it has been implemented as well. The grids have something called fractions (shorthand: fr). They work, pretty similar to flexbox 'flex' property filling out available space in given proportions.
 
 ```html
 <div class="container">
@@ -163,6 +169,7 @@ You may also wonder about it's responsiveness. Don't worry - it has been impleme
 }
 ```
 
+As we can see css-grids resolve vast majority of modern CSS layouting. With this module we're able to control our layout in two dimensions and have full responsiveness implemented. There's just little problem, when it comes about practical use of it - just read the line below and you'll know why.
 
 [Can I use 'grids'](http://caniuse.com/#feat=css-grid) - global support 8.1% (April 2016)
 

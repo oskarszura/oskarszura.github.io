@@ -1,0 +1,47 @@
+{
+  "name": "oskarszura.github.io",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build:dev": "webpack --mode=development --config webpack.dev.config.js",
+    "build:prod": "webpack --mode=production --config webpack.prod.config.js",
+    "lint": "eslint --ext .js .",
+    "lint:fix": "eslint --fix .",
+    "csslint": "stylelint ./src/**/*.scss",
+    "csslint:fix": "stylelint ./src/**/*.scss --fix",
+    "prettify": "prettier --write \"./client/**/*.{js,jsx}\""
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.2.2",
+    "bootstrap-scss": "^4.6.0",
+    "classnames": "^2.2.6",
+    "css-loader": "^3.6.0",
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^6.4.1",
+    "file-loader": "^5.0.2",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.16.4",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^0.13.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^3.0.0",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "stylelint": "^9.6.0",
+    "stylelint-config-standard": "^18.2.0",
+    "webpack-cli": "^3.3.12"
+  }
+}

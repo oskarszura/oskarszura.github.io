@@ -1,0 +1,13 @@
+language: node_js
+
+node_js:
+  - 12.10.0
+
+install:
+  - make install
+
+before_script:
+  - make lint
+
+script:
+  - make all

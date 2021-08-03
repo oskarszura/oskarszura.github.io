@@ -2,6 +2,8 @@
   background-image: url('../assets/images/header-background.jpg');
   height: $l-size-header-height;
   background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 1vw;
 
   &__caption-big {

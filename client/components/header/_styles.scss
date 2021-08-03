@@ -1,0 +1,23 @@
+.l-header {
+  background-image: url('../assets/images/header-background.jpg');
+  height: $l-size-header-height;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 1vw;
+
+  &__caption-big {
+    text-align: center;
+    margin: 0;
+    color: $color-white;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  &__caption-small {
+    text-align: center;
+    margin: 0;
+    color: $color-white;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}

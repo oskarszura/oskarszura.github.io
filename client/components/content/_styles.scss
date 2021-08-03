@@ -1,4 +1,10 @@
 .l-content {
   min-height: calc(100vh - #{$l-size-nav-height} - #{$l-size-header-height} - #{$l-size-footer-height});
   margin: 0 5vw;
+
+  &__header {
+    font-size: 30px;
+    color: $color-curious-blue;
+    margin: 0 10px;
+  }
 }

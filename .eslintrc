@@ -1,13 +1,11 @@
 {
   "parser": "babel-eslint",
   "plugins": [
-    "prettier",
-    "flowtype"
+    "prettier"
   ],
   "extends": [
     "airbnb",
-    "prettier",
-    "plugin:flowtype/recommended"
+    "prettier"
   ],
   "globals": {
     "window": true,

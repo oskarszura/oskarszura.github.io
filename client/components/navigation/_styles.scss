@@ -1,0 +1,10 @@
+.l-navigation {
+  background-color: $color-spiro-disco-ball;
+
+  &__item {
+    display: inline-block;
+    line-height: $l-size-nav-height;
+    padding-left: 10px;
+    color: $color-white;
+  }
+}

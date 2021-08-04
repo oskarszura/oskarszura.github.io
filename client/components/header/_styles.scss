@@ -7,17 +7,15 @@
   padding-top: 1vw;
 
   &__caption-big {
-    text-align: center;
+    text-align: left;
     margin: 0;
-    color: $color-white;
-    padding-top: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: $color-venice-blue;
+    font-size: 8vw;
+    margin-left: 2vw;
   }
   &__caption-small {
-    text-align: center;
+    text-align: left;
     margin: 0;
-    color: $color-white;
-    padding-bottom: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: $color-venice-blue;
   }
 }

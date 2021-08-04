@@ -3,7 +3,6 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Oskar Szura Blog</title>
-
     <link rel="stylesheet" href="/public/styles.css"/>
     <link href="https://raw.githubusercontent.com/richleland/pygments-css/master/autumn.css" rel="stylesheet"></link>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
@@ -28,7 +27,6 @@
         </li>
     </ul>
 </nav>
-
 <header class="l-header">
     <h1 class="l-header__caption-big">
         OSKAR SZURA
@@ -37,11 +35,20 @@
         professional software developer
     </h2>
 </header>
-
 <main class="l-content">
-    {{ content }}
+    <h4 class="l-content__header">About me</h4>
+    <section class="l-content__main">
+        {{ content }}
+    </section>
+    <aside class="l-content__aside">
+        <div id="gr_updates_widget">
+            <iframe id="the_iframe" src="https://goodreads.com/widgets/user_update_widget?height=400&num_updates=5&user=75057757&width=250" width="248" height="330" frameborder="0"></iframe>
+            <div id="gr_footer">
+                <a href="https://www.goodreads.com/"><img alt="Goodreads: Book reviews, recommendations, and discussion" src="https://s.gr-assets.com/images/layout/goodreads_logo_140.png" /></a>
+            </div>
+        </div>
+    </aside>
 </main>
-
 <footer class="l-footer">
     coded & designed by <a href="http://codait.net">CODA_</a>
 </footer>
